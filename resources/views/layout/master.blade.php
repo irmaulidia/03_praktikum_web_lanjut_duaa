@@ -2,7 +2,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Xtra Blog</title>
+	<title>{{$title}}</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
     <link href="{{ url('css/bootstrap.min.css')}}" rel="stylesheet">
@@ -25,7 +25,7 @@ https://templatemo.com/tm-553-xtra-blog
                 <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
                 <h1 class="text-center">Xtra Blog</h1>
             </div>
-            @include("layouts.sidebar");
+            @include("layout.sidebar");
             <div class="tm-mb-65">
                 <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
                     <i class="fab fa-facebook tm-social-icon"></i>
@@ -46,4 +46,4 @@ https://templatemo.com/tm-553-xtra-blog
         </div>
     </header>
     @yield('content')
-    @include('layouts.footer')
+    @include('layout.footer')

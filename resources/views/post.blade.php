@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@extends('layout.master')
 @section('content')
 
 <div class="container-fluid">
@@ -28,30 +28,17 @@
                 <div class="col-lg-8 tm-post-col">
                     <div class="tm-post-full">                    
                         <div class="mb-4">
-                            <h2 class="pt-2 tm-color-primary tm-post-title">Single Post of Xtra Blog HTML Template</h2>
-                            <p class="tm-mb-40">June 16, 2020 posted by Admin Nat</p>
-                            <p>
-                                This is a description of the video post. You can also have an image instead of
-                                the video. You can free download 
-                                <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Xtra Blog Template</a> 
-                                from TemplateMo website. Phasellus maximus quis est sit amet maximus. Vestibulum vel rutrum
-                                lorem, ac sodales augue. Aliquam erat volutpat. Duis lectus orci, blandit in arcu
-                                est, elementum tincidunt lectus. Praesent vel justo tempor, varius lacus a,
-                        pharetra lacus. </p>
-                            <p>
-                                Duis pretium efficitur nunc. Mauris vehicula nibh nisi. Curabitur gravida neque
-                                dignissim, aliquet nulla sed, condimentum nulla. Pellentesque id venenatis
-                                quam, id cursus velit. Fusce semper tortor ac metus iaculis varius. Praesent
-                                aliquam ex vel lectus ornare tristique. Nunc et eros quis enim feugiat tincidunt
-                                et vitae dui.
-                            </p>
+                            <h2 class="pt-2 tm-color-primary tm-post-title">{{$data->id}}</h2>
+                            <p class="tm-mb-40">{{$data->nama}} {{$data->created_at}}</p>
+                            {{$data->updated_at}}
                             <span class="d-block text-right tm-color-primary">Creative . Design . Business</span>
                         </div>
                         
                         <!-- Comments -->
                         <div>
-                            <h2 class="tm-color-primary tm-post-title">Comments</h2>
                             <hr class="tm-hr-primary tm-mb-45">
+                            <h2 class="tm-color-primary tm-post-title">Comments</h2>
+                            
                             <div class="tm-comment tm-mb-45">
                                 <figure class="tm-comment-figure">
                                     <img src="img/comment-1.jpg" alt="Image" class="mb-2 rounded-circle img-thumbnail">

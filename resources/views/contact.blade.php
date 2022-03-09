@@ -1,4 +1,4 @@
-@extends('layouts.header')
+@extends('layout.master')
 @section('content')
 <div class="container-fluid">
         <main class="tm-main">
